@@ -2,6 +2,8 @@
 #include "./ui_mainwindow.h"
 #include <iostream>
 #include <QtWidgets>
+#include <QtMultimediaWidgets/QVideoWidget>
+#include <QtMultimedia/QMediaPlayer>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -18,10 +20,31 @@ MainWindow::~MainWindow()
 void MainWindow::init_win() {
     auto main_widget = ui->centralwidget;
     auto main_layout = new QVBoxLayout;
-    auto main_text = new QTextEdit;
+    auto text_layout = new QHBoxLayout;
+    auto video_layout = new QHBoxLayout;
+    main_layout->addLayout(video_layout);
+    main_layout->addLayout(text_layout);
+    //video layout
+    auto player = new QMediaPlayer;
+    player->setSource(QUrl("https://aiot-gateway.zijieapi.com/media_record/v1/file/get?ObjKey=pbmv8ylxuo9eofa7.push.bfcdnbf.com/8501520c-67d0-45e7-a0b6-028b08e2ac90/m3u8/1659460608072_1659461204067.m3u8&X-JWT-Token=ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SkJZMk52ZFc1MFNVUWlPakl4TURBd05UTXhORE1zSW1WNGNDSTZNVFkyTURFMU1EVXlNeXdpYVhOeklqb2lZV2x2ZEY5elpYSjJaWElpTENKRmVIUnlZU0k2ZXlKUFltcExaWGtpT2lKd1ltMTJPSGxzZUhWdk9XVnZabUUzTG5CMWMyZ3VZbVpqWkc1aVppNWpiMjB2T0RVd01UVXlNR010Tmpka01DMDBOV1UzTFdFd1lqWXRNREk0WWpBNFpUSmhZemt3TDIwemRUZ3ZNVFkxT1RRMk1EWXdPREEzTWw4eE5qVTVORFl4TWpBME1EWTNMbTB6ZFRnaUxDSlFaWEp0YVhOemFXOXVJam9pTVNKOWZRLk5fVVdURjBPMmd0MUdrUkV0enYxd1FyanVVS0ctUDRUeng4WC1uTndOaWs="));
+    auto video_widget = new QVideoWidget;
+    player->setVideoOutput(video_widget);
+    player->play();
+    video_widget->show();
+    video_layout->addWidget(video_widget);
+    //text layout
+    main_text = new QTextEdit;
+    main_text->setMaximumHeight(200);
     auto submit_btn = new QPushButton("&submit");
-    main_layout->addWidget(main_text);
-    main_layout->addWidget(submit_btn);
+    //receiver: 接受click事件的obj,监听click,并传递到receiver的on_btn_click函数
+    connect(submit_btn, SIGNAL(clicked(bool)), this, SLOT(on_btn_click()));
+    text_layout->addWidget(main_text);
+    text_layout->addWidget(submit_btn);
     main_widget->setLayout(main_layout);
+}
+
+
+void MainWindow::on_btn_click() {
+    this->main_text->setText("hello world");
 }
 

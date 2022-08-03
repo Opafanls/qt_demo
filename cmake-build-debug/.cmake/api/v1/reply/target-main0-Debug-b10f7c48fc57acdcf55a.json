@@ -95,6 +95,18 @@
 				},
 				{
 					"backtrace" : 6,
+					"define" : "QT_MULTIMEDIAWIDGETS_LIB"
+				},
+				{
+					"backtrace" : 6,
+					"define" : "QT_MULTIMEDIA_LIB"
+				},
+				{
+					"backtrace" : 6,
+					"define" : "QT_NETWORK_LIB"
+				},
+				{
+					"backtrace" : 6,
 					"define" : "QT_WIDGETS_LIB"
 				}
 			],
@@ -149,6 +161,36 @@
 					"backtrace" : 6,
 					"isSystem" : true,
 					"path" : "/Users/hongqianhui/Qt/6.3.1/macos/lib/QtGui.framework"
+				},
+				{
+					"backtrace" : 6,
+					"isSystem" : true,
+					"path" : "/Users/hongqianhui/Qt/6.3.1/macos/lib/QtMultimedia.framework/Headers"
+				},
+				{
+					"backtrace" : 6,
+					"isSystem" : true,
+					"path" : "/Users/hongqianhui/Qt/6.3.1/macos/lib/QtMultimedia.framework"
+				},
+				{
+					"backtrace" : 6,
+					"isSystem" : true,
+					"path" : "/Users/hongqianhui/Qt/6.3.1/macos/lib/QtNetwork.framework/Headers"
+				},
+				{
+					"backtrace" : 6,
+					"isSystem" : true,
+					"path" : "/Users/hongqianhui/Qt/6.3.1/macos/lib/QtNetwork.framework"
+				},
+				{
+					"backtrace" : 6,
+					"isSystem" : true,
+					"path" : "/Users/hongqianhui/Qt/6.3.1/macos/lib/QtMultimediaWidgets.framework/Headers"
+				},
+				{
+					"backtrace" : 6,
+					"isSystem" : true,
+					"path" : "/Users/hongqianhui/Qt/6.3.1/macos/lib/QtMultimediaWidgets.framework"
 				}
 			],
 			"language" : "CXX",
@@ -204,6 +246,19 @@
 			},
 			{
 				"fragment" : "-Wl,-rpath,/Users/hongqianhui/Qt/6.3.1/macos/lib",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/Users/hongqianhui/Qt/6.3.1/macos/lib/QtMultimediaWidgets.framework/Versions/A/QtMultimediaWidgets",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "/Users/hongqianhui/Qt/6.3.1/macos/lib/QtMultimedia.framework/Versions/A/QtMultimedia",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/Users/hongqianhui/Qt/6.3.1/macos/lib/QtNetwork.framework/Versions/A/QtNetwork",
 				"role" : "libraries"
 			},
 			{

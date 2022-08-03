@@ -378,6 +378,7 @@
   /Users/hongqianhui/Qt/6.3.1/macos/lib/QtCore.framework/Versions/A/Headers/qtextstream.h \
   /Users/hongqianhui/Qt/6.3.1/macos/lib/QtCore.framework/Versions/A/Headers/qtmetamacros.h \
   /Users/hongqianhui/Qt/6.3.1/macos/lib/QtCore.framework/Versions/A/Headers/qtypeinfo.h \
+  /Users/hongqianhui/Qt/6.3.1/macos/lib/QtCore.framework/Versions/A/Headers/qurl.h \
   /Users/hongqianhui/Qt/6.3.1/macos/lib/QtCore.framework/Versions/A/Headers/qutf8stringview.h \
   /Users/hongqianhui/Qt/6.3.1/macos/lib/QtCore.framework/Versions/A/Headers/qvariant.h \
   /Users/hongqianhui/Qt/6.3.1/macos/lib/QtCore.framework/Versions/A/Headers/qvarlengtharray.h \
@@ -395,21 +396,30 @@
   /Users/hongqianhui/Qt/6.3.1/macos/lib/QtGui.framework/Versions/A/Headers/qkeysequence.h \
   /Users/hongqianhui/Qt/6.3.1/macos/lib/QtGui.framework/Versions/A/Headers/qpaintdevice.h \
   /Users/hongqianhui/Qt/6.3.1/macos/lib/QtGui.framework/Versions/A/Headers/qpalette.h \
+  /Users/hongqianhui/Qt/6.3.1/macos/lib/QtGui.framework/Versions/A/Headers/qpen.h \
   /Users/hongqianhui/Qt/6.3.1/macos/lib/QtGui.framework/Versions/A/Headers/qpixelformat.h \
   /Users/hongqianhui/Qt/6.3.1/macos/lib/QtGui.framework/Versions/A/Headers/qpixmap.h \
   /Users/hongqianhui/Qt/6.3.1/macos/lib/QtGui.framework/Versions/A/Headers/qpolygon.h \
   /Users/hongqianhui/Qt/6.3.1/macos/lib/QtGui.framework/Versions/A/Headers/qregion.h \
   /Users/hongqianhui/Qt/6.3.1/macos/lib/QtGui.framework/Versions/A/Headers/qrgb.h \
   /Users/hongqianhui/Qt/6.3.1/macos/lib/QtGui.framework/Versions/A/Headers/qrgba64.h \
+  /Users/hongqianhui/Qt/6.3.1/macos/lib/QtGui.framework/Versions/A/Headers/qtextcursor.h \
+  /Users/hongqianhui/Qt/6.3.1/macos/lib/QtGui.framework/Versions/A/Headers/qtextdocument.h \
+  /Users/hongqianhui/Qt/6.3.1/macos/lib/QtGui.framework/Versions/A/Headers/qtextformat.h \
+  /Users/hongqianhui/Qt/6.3.1/macos/lib/QtGui.framework/Versions/A/Headers/qtextoption.h \
   /Users/hongqianhui/Qt/6.3.1/macos/lib/QtGui.framework/Versions/A/Headers/qtgui-config.h \
   /Users/hongqianhui/Qt/6.3.1/macos/lib/QtGui.framework/Versions/A/Headers/qtguiexports.h \
   /Users/hongqianhui/Qt/6.3.1/macos/lib/QtGui.framework/Versions/A/Headers/qtguiglobal.h \
   /Users/hongqianhui/Qt/6.3.1/macos/lib/QtGui.framework/Versions/A/Headers/qtransform.h \
   /Users/hongqianhui/Qt/6.3.1/macos/lib/QtGui.framework/Versions/A/Headers/qwindowdefs.h \
   /Users/hongqianhui/Qt/6.3.1/macos/lib/QtWidgets.framework/Versions/A/Headers/QMainWindow \
+  /Users/hongqianhui/Qt/6.3.1/macos/lib/QtWidgets.framework/Versions/A/Headers/QTextEdit \
+  /Users/hongqianhui/Qt/6.3.1/macos/lib/QtWidgets.framework/Versions/A/Headers/qabstractscrollarea.h \
+  /Users/hongqianhui/Qt/6.3.1/macos/lib/QtWidgets.framework/Versions/A/Headers/qframe.h \
   /Users/hongqianhui/Qt/6.3.1/macos/lib/QtWidgets.framework/Versions/A/Headers/qmainwindow.h \
   /Users/hongqianhui/Qt/6.3.1/macos/lib/QtWidgets.framework/Versions/A/Headers/qsizepolicy.h \
   /Users/hongqianhui/Qt/6.3.1/macos/lib/QtWidgets.framework/Versions/A/Headers/qtabwidget.h \
+  /Users/hongqianhui/Qt/6.3.1/macos/lib/QtWidgets.framework/Versions/A/Headers/qtextedit.h \
   /Users/hongqianhui/Qt/6.3.1/macos/lib/QtWidgets.framework/Versions/A/Headers/qtwidgets-config.h \
   /Users/hongqianhui/Qt/6.3.1/macos/lib/QtWidgets.framework/Versions/A/Headers/qtwidgetsexports.h \
   /Users/hongqianhui/Qt/6.3.1/macos/lib/QtWidgets.framework/Versions/A/Headers/qtwidgetsglobal.h \
