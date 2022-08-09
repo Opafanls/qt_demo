@@ -5,6 +5,8 @@
 #include <QLocale>
 #include <QTranslator>
 #include <QtCore5Compat/QTextCodec>
+#include <QMenuBar>
+#include <QStatusBar>
 
 int main(int argc, char *argv[])
 {

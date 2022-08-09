@@ -181,7 +181,7 @@ build main0_autogen/timestamp main0_autogen/mocs_compilation.cpp | ${cmake_ninja
 #############################################
 # Phony custom command for CMakeFiles/main0_autogen_timestamp_deps
 
-build CMakeFiles/main0_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/main0_autogen_timestamp_deps: phony /Users/hongqianhui/Qt/6.3.1/macos/lib/QtCore.framework/Versions/A/QtCore /Users/hongqianhui/Qt/6.3.1/macos/lib/QtWidgets.framework/Versions/A/QtWidgets /Users/hongqianhui/Qt/6.3.1/macos/./libexec/uic /Users/hongqianhui/Qt/6.3.1/macos/./libexec/moc /Users/hongqianhui/Qt/6.3.1/macos/lib/QtMultimedia.framework/Versions/A/QtMultimedia
+build CMakeFiles/main0_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/main0_autogen_timestamp_deps: phony /Users/hongqianhui/Qt/6.3.1/macos/lib/QtWidgets.framework/Versions/A/QtWidgets /Users/hongqianhui/Qt/6.3.1/macos/lib/QtMultimedia.framework/Versions/A/QtMultimedia /Users/hongqianhui/Qt/6.3.1/macos/./libexec/uic /Users/hongqianhui/Qt/6.3.1/macos/lib/QtCore.framework/Versions/A/QtCore /Users/hongqianhui/Qt/6.3.1/macos/./libexec/moc
 
 
 #############################################

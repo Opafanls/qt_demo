@@ -18,6 +18,9 @@ MainWindow::~MainWindow()
 }
 
 void MainWindow::init_win() {
+    //menu
+    create_menu();
+    //video
     auto main_widget = ui->centralwidget;
     auto main_layout = new QVBoxLayout;
     auto text_layout = new QHBoxLayout;
@@ -41,10 +44,50 @@ void MainWindow::init_win() {
     text_layout->addWidget(main_text);
     text_layout->addWidget(submit_btn);
     main_widget->setLayout(main_layout);
+
+    QString message = tr("this is the menu bar");
+    statusBar()->showMessage(message);
 }
 
 
 void MainWindow::on_btn_click() {
     this->main_text->setText("hello world");
 }
+
+void MainWindow::create_menu() {
+    //create actions
+    auto* newAct = new QAction(tr("&New"), this);
+    newAct->setToolTip("&Create new file");
+    newAct->setShortcuts(QKeySequence::New);    //增加快捷键,ctrl+N
+
+    auto* close = new QAction(tr("Quit"), this);    //will not show @mac if quit/exit
+    close->setToolTip("&Quit new program"); //auto*而不是auto
+    close->setShortcuts(QKeySequence::Close);    //增加快捷键,ctrl+N
+
+    //creat menus
+    fileMenu = menuBar()->addMenu(tr("&File"));
+    fileMenu->addAction(newAct);
+    fileMenu->addAction(close);
+    fileMenu->addSeparator();
+
+    connect(newAct, &QAction::triggered, this, &MainWindow::newFile);
+    connect(close, &QAction::triggered, this, &MainWindow::quit);
+}
+
+void MainWindow::newFile() {
+
+}
+
+void MainWindow::quit() {
+    exit(0);
+}
+
+
+#ifndef QT_NO_CONTEXTMENU
+void MainWindow::contextMenuEvent(QContextMenuEvent *event)
+{
+    QMenu menu(this);
+    menu.exec(event->globalPos());
+}
+#endif // QT_NO_CONTEXTMENU
 
